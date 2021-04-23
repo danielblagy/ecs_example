@@ -2,8 +2,6 @@
 
 #include "entity.h"
 
-#include "components.h"
-
 #include <stdio.h>
 
 

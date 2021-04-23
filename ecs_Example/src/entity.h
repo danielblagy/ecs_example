@@ -8,12 +8,13 @@
 class Entity
 {
 private:
-	entt::entity entity_handle = entt::entity(0);
+	entt::entity entity_handle = entt::null;
 	Scene* scene = NULL;
 
 public:
-	Entity();
 	Entity(entt::entity s_entity_handle, Scene* s_scene);
+
+	inline entt::entity get_handle() { return entity_handle; }
 
 	template<typename T, typename... Args>
 	T& add_component(Args&&... args)

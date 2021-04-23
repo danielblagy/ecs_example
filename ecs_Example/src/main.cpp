@@ -1,6 +1,5 @@
 #include "scene.h"
 #include "entity.h"
-#include "components.h"
 
 void create_object(Scene& scene,
     double init_pos_x, double init_pos_y,

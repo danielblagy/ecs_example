@@ -2,6 +2,8 @@
 
 #include "../vendor/entt.hpp"
 
+#include "components.h"
+
 
 class Entity;
 
