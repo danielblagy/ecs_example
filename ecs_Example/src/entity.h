@@ -37,6 +37,6 @@ public:
 	template<typename T>
 	bool has_component()
 	{
-		return scene->registry.has<T>(entity_handle);
+		return scene->registry.all_of<T>(entity_handle);
 	}
 };
